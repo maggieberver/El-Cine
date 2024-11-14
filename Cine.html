@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>El Cine</title>
+    
+    <!--Se referencian los códigos JavaScript y la hoja de estilo css.-->
+    <script type="text/javascript" src="Cine.js"></script>
+    <link rel="stylesheet" href="Cine.css">
+
+</head>
+<body>
+
+    <!--Se agrega un encabezado.-->
+    <header>
+
+        <!--Se insertan las imágenes del logotipo y el nombre del cine.-->
+        <div class="logo">
+            <img src="Logo cine.png" alt="Logo del cine">
+            <img src="Tipografia.png" alt="Logo del cine">
+        </div>
+        <!--Se agregan dos cajas de texto, una para que el usuario escriba el nombre de la reserva y la segunda para que seleccione un número de asiento.-->
+        <nav>
+        Nombre: <input class="BoxName" type="text" id="nomAsiento">
+        Asiento: <input class="BoxNum" type="text" id="numAsiento" onkeypress="soloNumeros(event)"> 
+        </nav>
+        <!--Se agrega un botón de "Reserva" que llama a su función homónima.-->
+        <button type="button" class="button" onclick="Reservar();">
+            <span class="button_text">Reservar</span>
+        </button>
+
+    <!--Se crea una tabla que muestra los asientos de la sala de cine.-->
+    </header>
+    
+           <table class="TablaAsientos" border="1">
+    
+            <!--Al hacer clic en un asiento, llama a la función "Ventana"-->
+            <tr class="asientos">
+                <td><img src="Empty seat.png" id="Asiento1" onclick="Ventana(1)"></td>
+                <td><img src="Empty seat.png" id="Asiento2" onclick="Ventana(2)"></td>
+                <td><img src="Empty seat.png" id="Asiento3" onclick="Ventana(3)"></td>
+                <td><img src="Empty seat.png" id="Asiento4" onclick="Ventana(4)"></td>
+                <td><img src="Empty seat.png" id="Asiento5" onclick="Ventana(5)"></td>
+                <td><img src="Empty seat.png" id="Asiento6" onclick="Ventana(6)"></td>
+                <td><img src="Empty seat.png" id="Asiento7" onclick="Ventana(7)"></td>
+                <td><img src="Empty seat.png" id="Asiento8" onclick="Ventana(8)"></td>
+            </tr>
+            <!--Se agrega la etiqueta con el número de asiento y la leyenda "Disponible" por default debajo de cada asiento.-->
+            <tr class="etiquetas">
+                <td height="10px"><label id="Etiqueta1">1<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta2">2<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta3">3<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta4">4<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta5">5<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta6">6<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta7">7<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta8">8<br>Disponible</label></td>
+            </tr>
+            <!--Al hacer clic en un asiento, llama a la función "Ventana"-->
+            <tr class="asientos">
+                <td><img src="Empty seat.png" id="Asiento9" onclick="Ventana(9)"></td>
+                <td><img src="Empty seat.png" id="Asiento10" onclick="Ventana(10)"></td>
+                <td><img src="Empty seat.png" id="Asiento11" onclick="Ventana(11)"></td>
+                <td><img src="Empty seat.png" id="Asiento12" onclick="Ventana(12)"></td>
+                <td><img src="Empty seat.png" id="Asiento13" onclick="Ventana(13)"></td>
+                <td><img src="Empty seat.png" id="Asiento14" onclick="Ventana(14)"></td>
+                <td><img src="Empty seat.png" id="Asiento15" onclick="Ventana(15)"></td>
+                <td><img src="Empty seat.png" id="Asiento16" onclick="Ventana(16)"></td>
+            </tr>
+            <!--Se agrega la etiqueta con el número de asiento y la leyenda "Disponible" por default debajo de cada asiento.-->
+            <tr class="etiquetas">
+                <td height="10px"><label id="Etiqueta9">9<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta10">10<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta11">11<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta12">12<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta13">13<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta14">14<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta15">15<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta16">16<br>Disponible</label></td>
+            </tr>
+            <!--Al hacer clic en un asiento, llama a la función "Ventana"-->
+            <tr class="asientos">
+                <td><img src="Empty seat.png" id="Asiento17" onclick="Ventana(17)"></td>
+                <td><img src="Empty seat.png" id="Asiento18" onclick="Ventana(18)"></td>
+                <td><img src="Empty seat.png" id="Asiento19" onclick="Ventana(19)"></td>
+                <td><img src="Empty seat.png" id="Asiento20" onclick="Ventana(20)"></td>
+                <td><img src="Empty seat.png" id="Asiento21" onclick="Ventana(21)"></td>
+                <td><img src="Empty seat.png" id="Asiento22" onclick="Ventana(22)"></td>
+                <td><img src="Empty seat.png" id="Asiento23" onclick="Ventana(23)"></td>
+                <td><img src="Empty seat.png" id="Asiento24" onclick="Ventana(24)"></td>
+            </tr>
+            <!--Se agrega la etiqueta con el número de asiento y la leyenda "Disponible" por default debajo de cada asiento.-->
+            <tr class="etiquetas">
+                <td height="10px"><label id="Etiqueta17">17<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta18">18<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta19">19<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta20">20<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta21">21<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta22">22<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta23">23<br>Disponible</label></td>
+                <td height="10px"><label id="Etiqueta24">24<br>Disponible</label></td>
+            </tr>
+            <!--Se combinan las celdas de la última fila de la tabla para insertar la imagen de la pantalla.-->
+            <tr><th colspan="8"><img src="Pantalla.png" alt="Pantalla" width="800px"></th></th>
+            </table>
+ 
+    <!--Se crea la ventana modal para editar o eliminar la reserva de un asiento.-->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <!--Se llama a la función "cerrarModal()" en caso de dar clic en la x.-->
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <label>Nombre:</label>
+            <!--Se agrega una caja de texto para escribir el nombre de la reserva.-->
+            <input type="text" id="nomAsiento2"><br><br>
+            <label>Asiento:</label>
+            <!--Se agrega una caja de texto para escribir el número de asiento.-->
+            <input type="text" id="numAsiento2"><br><br>
+            <!--Se agrega un botón que llama a la función "Guardar()" para almacenar los datos editados.-->
+            <button class="BotonModal" onclick="Guardar()">Guardar</button>
+            <!--Se agrega un botón que llama a la función "Eliminar()" para borrar la reserva.-->
+            <button class="BotonModal" onclick="Eliminar()">Eliminar</button>
+        </div>
+    </div>
+
+    <!--Se crea una tabla para simular una cartelera de cine, donde al dar clic a las imágenes llama a la función "Ventana2()".-->
+    <table class="Cartelera">
+        <tr>
+            <td><img src="The Hunger Games.png" onclick="Ventana2(1)"></a></td>
+            <td><img src="The Maze Runner.png" onclick="Ventana2(2)"></td>
+        </tr>
+        <tr>
+            <td><img src="Peaky Blinders.png" onclick="Ventana2(3)"></td>
+            <td><img src="OrgulloPrejuicio.png" onclick="Ventana2(4)"></td>
+        </tr>
+        <tr>
+            <td><img src="Twilight.png" onclick="Ventana2(5)"></td>
+            <td><img src="Shadowhunters.png" onclick="Ventana2(6)"></td>
+        </tr>
+    </table>
+
+    <!--Se crea una ventana modal donde se reproduce el trailer de la película seleccionada.-->
+    <div id="miModal2" class="modal2">
+        <div class="modal2-content">
+            <iframe id="trailer" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
